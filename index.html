@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Верстка сайта по макету из Figma</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Подключаем JQuery -->
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
 <body>
 	<header id="header" class="header">
@@ -32,8 +37,8 @@
 					<li><a href="#header">home</a></li>
 					<li><a href="#story">about</a></li>
 					<li><a href="#services">services</a></li>
-					<li><a href="#">work</a></li>
-					<li><a href="#">contact</a></li>
+					<li><a href="#get-in-touch">work</a></li>
+					<li><a href="#footer">contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -81,6 +86,72 @@
 				</div>
 			</div>
 	</section>
-
+	<section id="get-in-touch" class="get-in-touch">
+		<div class="container">
+			<div class="get-in-touch_content">
+				<h1>Want to build something amazing?</h1>
+				<div class="get-in-touch_button"><a href="#">get in touch</a></div>
+			</div>
+		</div>
+	</section>
+	<section class="email">
+		<div class="container">
+			<div class="email_container">
+				<h2 class="email_title">Newsletter Signup</h2>
+				<div>
+					<form action="#" method="post" enctype="multipart/form-data" name="email_button">
+						<input tabindex="1" type="email" name="email_button" placeholder="test@youremail.com" value="">
+						<button tabindex="2" type="submit" name="email_button">signup</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer" class="footer">
+		<div class="footer_links container">
+			<div class="grid_contant-links">
+				<div class="grid_company">
+					<h3 class="company-title">company</h3>
+					<div class="company-logo">
+						<img src="img/logo_wight.png" alt="Логотип копании">
+					</div>
+					<p class="company-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+				</div>
+				<ul class="grid_links">
+					<li class="grid__item link1"><h3>links</h3></li>
+					<li class="grid__item link2"><a href="#header">home</a></li>
+					<li class="grid__item link3"><a href="#story">about</a></li>
+					<li class="grid__item link4"><a href="#services">services</a></li>
+					<li class="grid__item link5"><a href="#get-in-touch">projects</a></li>
+					<li class="grid__item link6"><a href="#footer">contact us</a></li>
+					<li class="grid__item link7"><a href="#">faq</a></li>
+					<li class="grid__item link8"><a href="#">terms</a></li>
+					<li class="grid__item link9"><a href="#">careers</a></li>
+					<li class="grid__item link10"><a href="#"></a></li>
+					<li class="grid__item link11"><a href="#"></a></li>
+					<li class="grid__item link12"><a href="#">blog</a></li>
+					<li class="grid__item link13"><a href="#">partners</a></li>
+					<li class="grid__item link14"><a href="#">news</a></li>
+					<li class="grid__item link15"><a href="#"></a></li>
+					<li class="grid__item link16"><a href="#"></a></li>
+				</ul>
+				<div class="grid_contact">
+					<h3 class="contact_title">contact us</h3>
+					<p class="contact_text">213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name</p>
+					<p class="contact_phone">+23 994 233 4022</p>
+					<p class="contact_email">info@konstruct.com</p>
+				</div>
+				<div class="footer_social">
+					<div class="icon"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></div>
+					<div class="icon"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+					<div class="icon"><a href="https://www.google.com/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_copyright container" >
+			<p class="copyright">&copy; 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
+		</div>
+	</footer>
+	https://twitter.com/
 </body>
 </html>

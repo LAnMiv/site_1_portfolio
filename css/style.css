@@ -35,6 +35,7 @@ body {
 }
 
 /* Раздел Header */
+
 .header {
 	margin: 0 auto;
 	max-width: 1440px;
@@ -72,9 +73,15 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 }
+.header_text_bottom a:hover {
+	color: #00A4E5;
+}
 
 /* Раздел Menu */
 
+.header_menu .container {
+	border: 1px solid #E6E6E6;
+}
 .header_menu .menu {
 	padding: 25px 0;
 	display: flex;
@@ -107,6 +114,7 @@ body {
 }
 
 /* Раздел "Our story" */
+
 .story {
 	padding: 50px 0;
 }
@@ -172,23 +180,13 @@ body {
 	margin-right: 0;
 }
 
-/* Раздел ""Our capabilities
- */
-.services {
-	border: 1px solid #000;
-}
-.container {
-	border: 1px solid #000;
-}
+/* Раздел ""Our capabilities */
+
 .services_top {
-	border: 1px solid green;
 	display: flex;
 	margin-bottom: 50px;
-	/* height: 100px; */
 }
 .services_title_2 {
-	border: 1px solid blue;
-	/* display: inline-block; */
 	width: 38%;
 	font-size: 18px;
 	font-weight: 700;
@@ -210,27 +208,31 @@ body {
 	justify-content: space-between;
 }
 .services_text {
-	border: 1px solid red;
-	/* display: inline-block; */
 	width: 400px;
 	font-size: 11px;
 	line-height: 19px;
 	color: #48555B;
 }
 .services_button {
-	border: 1px solid orange;
-	/* display: inline-block; */
+	
 	width: 150px;
 	height: 40px;
 	text-align: center;
 	background-color: #00A4E5;
-
+}
+.services_button:hover {
+	background-color: #72c1e0;
+	
+}
+.services_button a:hover {
+	color: #48555B;
 }
 .services_button a {
-	/* display: inline-block; */
+	display: block;
 	font-size: 13px;
-	font-weight: 400;
-	line-height: 36px;
+	font-weight: 600;
+	line-height: 40px;
+	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	color: #FFFFFF;
 }
@@ -264,14 +266,226 @@ body {
 	line-height: 23px;
 }
 
-@media screen and (max-width: 1440px) {
+/* Раздел "Get in touch" */
+
+.get-in-touch {
+	margin: 0 auto;
+	max-width: 1440px;
+	background: url(../img/get-in-touch.png) center no-repeat;
+}
+.get-in-touch_content {
+	text-align: center;
+	height: 499px;
+}
+.get-in-touch_content h1 {
+	width: 355px;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	color: #48555B;
+	margin: 0 auto 35px;
+	padding: 120px 0 0 0;
+}
+.get-in-touch_content h1:first-letter {
+	text-transform: uppercase;
+}
+.get-in-touch_button {
+	outline: none; /* Отключаем внешнюю границу кнопки */
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	background-color: #00A4E5;
+	margin: 0 auto;
+}
+.get-in-touch_button:hover {
+	background-color: #72c1e0;
+}
+.get-in-touch_button a:hover {
+	color: #48555B;
+}
+.get-in-touch_button a {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 40px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+/* Раздел "Newsletter signup (подписка)" */
+
+.email .container {
+	height: 100px;
+	background-color: #171819;
+}
+.email_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0;
+}
+.email_title {
+	width: 250px;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.85px;
+	color: #ffffff;
+	white-space: nowrap;
+}
+.email_container form {
+	display: flex;
+}
+.email_container form input {
+	background-color: #ffffff;
+	border-top: 1px solid #979797;
+	border-bottom: 1px solid #979797;
+	border-left: 1px solid #979797;
+	width: 250px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	padding-left: 16px;
+}
+.email_container form button {
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	background-color: #00A4E5;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 40px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.email_container form button:hover {
+	background-color: #72c1e0;
+	color: #48555B;
+}
+
+
+/* Footer */
+
+.footer {
+	color: #ffffff;
+	font-size: 11px;
+	letter-spacing: 0.85px;
+}
+.footer_links {
+	background-color: #141A20;
+}
+.grid_contant-links {
+	display: grid;
+	grid-template-columns: 250px 333px 199px 1fr;
+	grid-auto-rows: auto;
+	padding: 42px 0;
+}
+.grid_contant-links h3 {
+	text-transform: uppercase;
+}
+.company-title {
+	margin: 0px 0px 19px 0px;
+}
+.company-logo {
+	margin: 0px 0px 15px 0px;
+}
+.company-logo img {
+	width: 102px;
+}
+.company-text {
+	line-height: 19px;
+	padding-right: 25px;
+}
+.grid_links {
+	padding-left: 71px;
+	display: grid;
+	grid-template-columns: repeat(3, 87px);
+	grid-template-rows: repeat(6, 1fr);
+	grid-auto-flow: column;
+}
+
+.grid__item a {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 600;
+}
+.grid__item a:hover {
+	color: #00A4E5;
+}
+.link1 {
+	grid-column: span 3;
+}
+.grid_contact {
+	padding-left: 38px;
+}
+.contact_title {
+	margin: 0px 0px 19px 0px;
+}
+.contact_text {
+	line-height: 16px;
+	padding: 0 25px 10px 0;
+}
+.contact_phone {
+	padding-bottom: 10px;
+}
+
+.footer_social {
+	
+	display: flex;
+	padding: 34px 0 0 20px;
+}
+.footer_social a {
+	font-size: 13px;
+	color: #ffffff;
+}
+.footer_social a:hover {
+	color: #00A4E5;
+}
+.footer_social .icon {
+	margin-right: 15px;
+}
+.footer_social .icon:last-child {
+	margin-right: 0;
+}
+.footer_copyright {
+	background-color: #171819;
+	height: 60px;
+	letter-spacing: 0.85px;
+	text-align: center;
+	line-height: 60px;
+}
+
+/* @media screen and (max-width: 1440px) {
 	.container {
-		padding: 0 50px;
+		padding: 0 250px;
+	}
+} */
+@media screen and (max-width: 1366px) {
+	.container {
+		padding: 0 150px;
+	}
+	.grid_contant-links {
+		grid-template-columns: 333px 333px;
+		justify-content: center;
+		column-gap: 50px;
+		row-gap: 50px;
+	}
+	.grid_links{
+		padding-left: 0;
+		justify-content: end;
+	}
+	.grid_contact {
+		padding-left: 0;
+	}
+	.footer_social {
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		
 	}
 }
 @media screen and (max-width: 1024px) {
 	.container {
-		padding: 0 15px;
+		padding: 0 100px;
 	}
 	.header_menu .menu {
 		flex-direction: column;
@@ -310,6 +524,51 @@ body {
 	.services_item {
 		margin-bottom: 27px;
 	}
+	.grid_contant-links {
+		grid-template-columns: 290px 290px;
+		justify-content: center;
+		gap: 15px;
+		padding: 20px 0;
+	}
+	.contact_text {
+		padding-right: 0;
+	}
+}
+@media screen and (max-width: 800px) {
+	.container {
+		padding: 0 25px;
+	}
+	.email .container {
+		height: 180px;
+	}
+	.email_title {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.email_container {
+		flex-direction: column;
+		padding: 20px 0;
+	}
+	.email_container form {
+		flex-direction: column;
+		align-items: center;
+	}
+	.email_container form input {
+		padding: 0;
+		text-align: center;
+		border: 1px solid #979797;
+		margin-bottom: 10px;
+	}
+	.grid_contant-links {
+		grid-template-columns: 333px;
+		justify-content: center;
+		row-gap: 20px;
+		padding: 20px 0;
+	}
+	.grid_links {
+		justify-content: stretch;
+		gap: 5px;
+	}
 }
 @media screen and (max-width: 500px) {
 	.header_menu ul {
@@ -336,8 +595,22 @@ body {
 	}
 	.services_text {
 		margin-bottom: 20px;
+		width: auto;
+	}
+	.services_button {
+		margin: 0 auto;
 	}
 	.services_item {
 		margin-right: 0;
 	}
+	.get-in-touch_content h1 {
+		width: auto;
+	}
+	.grid_contant-links {
+		grid-template-columns: 250px;
+		justify-content: center;
+		row-gap: 25px;
+		padding: 20px 0;
+	}
 }
+
